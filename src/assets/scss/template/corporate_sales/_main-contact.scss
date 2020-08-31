@@ -1,0 +1,57 @@
+
+.main-contact {
+    margin: 53px 0 85px 0;
+    &__column {
+        .main-contact {
+            color: $color-fusgray;
+            &__name {
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: $color-fusgray;
+                margin-top: 30px;
+            }
+            &__job {
+                font-size: 14px;
+                line-height: 24px;
+                margin-top: 10px;
+                display: block;
+                margin-bottom: 15px;
+            }
+            &__phone {
+                a {
+                    display: flex;
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 14px;
+                    color: $color-fusgray;
+                    &::before {
+                        content: url(../img/corporate-icons/phone.svg);
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+            &__mail {
+                font-size: 16px;
+                line-height: 24px;
+                position: relative;
+                display: flex;
+                align-self: center;
+                a {
+                    color: $color-fusgray;
+                }
+                &::before {
+                    content: url(../img/corporate-icons/mail.svg);
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

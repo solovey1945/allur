@@ -1,0 +1,50 @@
+.header {
+    padding: 15px 0;
+    height: 85px;
+    &__navbar { 
+        .header__menu {
+            display: flex;
+            .header__item {
+                margin: 0 15px;
+                &-link {
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $color-mine;
+                }
+                .dropdown__toggle {
+                    position: relative;
+                    i {
+                        transition: all .2s ease;
+                        transform: rotate(0deg);
+                    }
+                    &--active {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .header__phone {
+            display: flex;
+            a {
+                font-size: 30px;
+                line-height: 35px;
+                color: $color-mine;
+                display: block;
+                font-weight: bold;
+                position: relative;
+                &:first-child {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+.dropdown.dropdown--active {
+    transition: all .2s ease;
+    opacity: 1;
+    visibility: visible;
+}

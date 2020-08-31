@@ -1,0 +1,17 @@
+.inner {
+    width: 100%;
+    background-position: center center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        h1 {
+            font-size: 60px;
+            line-height: 70px;
+            color: $white;
+        }
+    }
+}

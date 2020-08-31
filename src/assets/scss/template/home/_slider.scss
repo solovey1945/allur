@@ -1,0 +1,49 @@
+.slider {
+    margin: 0 0 95px 0;
+    &__wrap {
+        .slide {
+            position: relative;
+            .col-lg-6 {
+                max-width: 45%;
+            }
+            &__content {
+                .slide__text {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 100px;
+                    h1 {
+                        font-size: 60px;
+                        line-height: 70px;
+                        color: $color-mine;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 24px;
+                        margin: 33px 0 54px 0;
+                        color: $color-fusgray;
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 44px;
+        li {
+            margin: 0 15px;
+            &.slick-active button {
+                background: $color-onyx;
+            }
+        }
+        button {
+            font-size: 0;
+            width: 12px;
+            height: 12px;
+            background: #c4c4c4;
+            border-radius: 50%;
+        }
+    }
+}

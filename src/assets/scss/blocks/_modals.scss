@@ -1,0 +1,51 @@
+.modal {
+    position: fixed;
+    background: rgba(196, 196, 196, 0.46);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s,top .5s;
+    &__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 15px;
+        height: 15px;
+        display: block;
+        mask-image: url(../img/cross.svg);
+        background-color: $black;
+        z-index: 20;
+        cursor: pointer;
+    }
+    &__content {
+        position: absolute;
+        width: 1405px;
+        // height: 843px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: center;
+        background-color: $white;
+        flex-direction: column;
+        mix-blend-mode: normal;
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        padding: 100px 130px;
+        .subtitle {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-mine;
+            margin-top: 30px;
+        }
+        .modal__form {
+            .form__input {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

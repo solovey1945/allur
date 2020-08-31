@@ -1,0 +1,13 @@
+.sales__inner {
+    background-image: url(../img/inner/corporate_sales-inner_img.png);
+    height: 423px;
+    .inner__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@import 'blocks/inner';
+@import '../template/corporate_sales/main-contact';
+@import 'blocks/callback';

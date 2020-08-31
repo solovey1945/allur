@@ -1,0 +1,36 @@
+.callback {
+    padding: 110px 0 127px 0;
+    background-color: #eee;
+    &__title {
+        font-size: 36px;
+        line-height: 42px;
+        color: $color-mine;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-fusgray;
+        margin-top: 30px;
+        display: block;
+    }
+    &__form {
+        margin-top: 34px;
+        .from__control {
+            border: 1px solid #C8C8C8;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: transparent;
+            width: 100%;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 24px;
+                color: #5F5F5F;
+            }
+        }
+        .form__textarea {
+            resize: none;
+            height: 184px;
+            margin: 40px 0 30px 0; 
+        }
+    }
+}

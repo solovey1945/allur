@@ -1,0 +1,46 @@
+<div class="modal">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <h1 class="title">Записаться на сервис</h1>
+            <span class="subtitle">Наши специалисты свяжутся с Вами в любое удобное для Вас время</span>
+            <form action="#" class="callback__form modal__form form">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input" name="Ваше имя *" required
+                    placeholder="Ваше имя *" pattern="^[А-Яа-яЁё\s]+$" maxlength="100">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input" name="Телефон *" required
+                    placeholder="Телефон *" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                    maxlength="18" minlength="10">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="email" class="from__control form__input" name="Email *" required placeholder="Email *">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input" name="Марка *" required placeholder="Марка *">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input" name="Модель *" required placeholder="Модель *">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input" name="Тип кузова *" required placeholder="Тип кузова *">
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-12">
+                        <input type="text" class="from__control form__input form__input-date" name="Дата *" required placeholder="Дата *">
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <textarea unselectable="on" class="from__control form__textarea" name="Сообщение"
+                        placeholder="Сообщение"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <input type="submit" name="submit" value="Отправить" class="btn btn--small btn--small_gray">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

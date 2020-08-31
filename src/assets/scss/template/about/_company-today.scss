@@ -1,0 +1,20 @@
+.company-today {
+    margin: 0 0 103px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    &__container {
+        flex: 0 0 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .company-today__content {
+            max-width: 462px;
+        }
+    }
+    &__img {
+        flex: 0 0 50%;
+    }
+}

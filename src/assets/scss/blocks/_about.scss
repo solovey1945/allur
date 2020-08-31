@@ -1,0 +1,21 @@
+.about__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-fusgray;
+    margin-top: 30px;
+}
+
+.about__inner {
+    background-image: url(../img/inner/about-inner_img.png);
+    height: 423px;
+}
+
+// @import 'blocks/header';
+// @import 'blocks/dropdown';
+@import 'blocks/inner';
+@import '../template/about/vision';
+@import '../template/about/mision';
+@import '../template/about/comp-company';
+@import '../template/about/company-today';
+@import '../template/about/production';
+// @import 'blocks/footer';

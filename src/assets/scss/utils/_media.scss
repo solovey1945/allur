@@ -1,0 +1,391 @@
+@media screen and (max-width: 1250px) {
+    .header__navbar {
+        .header__menu {
+            justify-content: center;
+
+            .header__item {
+                margin: 0 10px;
+
+                &-link {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .header__phone {
+            justify-content: flex-end;
+
+            a:first-child {
+                margin-right: 0;
+            }
+
+            a:last-child {
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    .slider__wrap .slide__content .slide__text h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .slider__wrap .slide__content .slide__text p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .footer {
+        padding: 40px 0;
+        &__text {
+            margin-bottom: 20px;
+        }
+        &__links {
+            margin-bottom: 15px;
+        }
+
+        &__socials {
+            margin-top: 30px;
+        }
+    }
+    .modal {
+        &__content {
+            width: 1081px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header__navbar {
+        .header__menu {
+            background: rgba($white, 5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 0%;
+            right: 0;
+            width: 100%;
+            top: 80px;
+            z-index: 5;
+            transform: translateY(-200%);
+            transition: all .5s ease-in-out;
+            border-bottom: 5px solid $color-fusgray;
+
+            .header__item {
+                margin: 15px 0;
+                text-align: center;
+
+                .dropdown {
+                    display: none;
+                    position: initial;
+                }
+            }
+
+            &--active {
+                transform: translateY(0%);
+            }
+        }
+        .header__burgmenu {
+            display: block;
+            position: relative;
+            width: 18px;
+            z-index: 4;
+            padding: 20px;
+            border-radius: 25px;
+
+            span {
+                background-color: $black;
+                width: 18px;
+                height: 2px;
+                border-radius: 25px;
+                position: absolute;
+                left: calc(50% - 9px);
+                top: calc(50% - 1.5px)
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 18px;
+                height: 2px;
+                background-color: $black;
+                position: absolute;
+                left: calc(50% - 9px);
+                top: calc(50% - 1.5px);
+                transition: transform 0.2s ease-in, margin-top 0.2s linear 0.2s;
+            }
+
+            &::before {
+                margin-top: -6px;
+            }
+
+            &::after {
+                margin-top: 6px;
+            }
+
+            &.burgmenu--active {
+                transition: .2s ease;
+
+                span {
+                    display: none;
+                }
+
+                &::after,
+                &::before {
+                    margin-top: 0;
+                }
+
+                &::after {
+                    transform: rotate(45deg);
+                }
+
+                &::before {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &--active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .position_inh {
+        position: inherit !important;
+    }
+    .company-today {
+        display: flex;
+        flex-direction: column;
+        .company-today__container .company-today__content {
+            max-width: 100%;
+        }
+        &__img {
+            margin-top: 25px;
+            .img__out_container {
+                width: 100%;
+            }
+        }
+    }
+
+    .inner {
+        height: 235px;
+        &__title {
+            h1 {
+                font-size: 30px;
+                line-height: 35px;
+            }
+        }
+    }
+    
+    .title {
+        font-size: 26px;
+    }
+
+    .modal {
+        &__content {
+            width: 100%;
+        }
+    }
+    .btn {
+        &--full {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .online {
+        flex-direction: column;
+        .online__container {
+            .online__content {
+                &-title {
+                    font-size: 30px;
+                    line-height: 35px;
+                }
+                &-text {
+                    font-size: 13px;
+                }
+            }
+        }
+        
+        &__img {
+            margin-top: 25px;
+            .img__out_container {
+                width: 100%;
+            }
+        }
+    }
+    .form__input-date {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .slick-initialized .slick-slide { display: inline-table; }
+    .slider__wrap .slide__content .slide__text {
+        position: relative;
+    }
+    .slide__img {
+        display: flex;
+        opacity: 1;
+        padding-top: 10px;
+    }
+    .footer {
+        &__bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            .footer__info {
+                display: flex;
+                flex-wrap: wrap;
+                &-left {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .img__out_container   {
+        width: 100%;
+    }
+    
+    .slider__wrap .slide .col-lg-6 {
+        max-width: 100%;
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .header__navbar {
+        .header__phone {
+            display: none;
+        }
+        .burg-sm {
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .callback__form .from__control {
+        margin-bottom: 20px;
+    }
+    .callback__form .form__textarea {
+        margin: 20px 0 30px 0;
+    }
+    .brand__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    .car__models {
+        div {
+            margin: 15px 0;
+        }
+        .car__model {
+            text-align: center;
+        }
+    }
+    
+    .modal {
+        &__content {
+            padding: 60px 35px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1250px) {
+    .header__navbar {
+        .row {
+            .col-md-9 {
+                flex: 0 0 83%;
+                max-width: 100%;
+            }
+        }
+    }
+    .btn {
+        &--full {
+            width: 300px;
+        }
+    }
+    .footer {
+        &__bottom {
+            align-items: flex-end;
+        }
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .facilities__list .facilities__item {
+        margin: 0 20px 20px 0;
+    }
+    
+    .slider__wrap .slide {
+        height: 26rem;
+    }
+    .footer {
+        &__bottom {
+            align-items: flex-end;
+            .footer__info {
+                flex-wrap: wrap;
+                align-items: flex-start;
+                flex-direction: column;
+                &-left {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 482px) and (max-width: 767px) {
+    .facilities__list .facilities__item {
+        margin: 0 20px 20px 0;
+    }
+    
+    .inner__icons {
+        position: absolute;
+        border: 0;
+        bottom: -55%;
+    }
+    .main-contact {
+        margin: 170px 0 85px 0;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 481px) {
+    .header__navbar {
+        .col-7 {
+            max-width: 56.33333%;
+        }
+    }
+
+    .facilities__list .facilities__item {
+        margin: 0 10px 30px 0;
+    }
+    .inner {
+        background-position: right center;
+        height: 204px;
+        &__title {
+            h1 {
+                font-size: 22px;
+                line-height: 33px;
+            }
+        }
+    
+        .inner__icons {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1540px) {
+    .slider__wrap .slide__content .slide__text {
+        top: 0;
+    }
+}

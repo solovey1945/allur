@@ -1,0 +1,85 @@
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/nullstyle';
+
+.wrapper {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.container  {
+    max-width: $container-break !important;
+}
+
+.title {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 400;
+    color: $color-mine;
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--small {
+        width: 265px;
+        height: 60px;
+        color: $white;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        transition: all .2s ease-in;
+        cursor: pointer;
+        &_black {
+            background-color: $black;
+        }
+        &_gray {
+            background-color: #c8c8c8;
+            &:hover {
+                background-color: $black;
+            }
+        }
+    }
+    &--full {
+        width: 363px;
+        height: 75px;
+        background: #eee;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: $color-onyx;
+        transition: all .2s ease-in;
+        &:hover {
+            background: darken(#eee, 2);
+        }
+    }
+}
+
+.img__out_container {
+    width: 52vw;
+    object-fit: cover;
+}
+
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+@import 'blocks/header';
+@import 'blocks/dropdown';
+@import 'blocks/home';
+@import 'blocks/about';
+@import 'blocks/corporate_sales';
+@import 'blocks/callback';
+@import 'blocks/footer';
+@import 'blocks/modals';
+@import 'utils/media';
+
+
+
+

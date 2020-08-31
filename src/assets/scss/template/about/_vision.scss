@@ -1,0 +1,10 @@
+.vision {
+    margin: 77px 0 100px 0;
+    &__text {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-fusgray;
+        margin-top: 30px;
+    }
+}
